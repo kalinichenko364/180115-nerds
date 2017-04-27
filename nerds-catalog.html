@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Каталог</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+	<header class="main-header">
+		<div class="index-logo">
+			<img src="img/index-logo.png" width="368" height="204" alt="«Nёrds»">
+		</div>
+		<div class="container">
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#">Студия</a>
+					</li>
+					<li>
+						<a href="#">Клиенты</a>
+					</li>
+					<li>
+						<a href="#">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+      			<a class="basket" href="#">Корзина</a>
+			</div>
+		</div>
+	</header>
+
+<!-- Content -->
+	<main>
+
+	<!-- Title -->
+		<div class="catalog-title">
+			<div class="container">
+				<h1 class="main-title">Магазин готовых шаблонов</h1>
+			</div>
+		</div>
+
+	<!-- Filter: Slider & Radio & Checkbox -->
+			<form action="#" method="get">
+		<!-- Slider -->	
+				<div class="filter-slider">
+					<p class="filter-title">Стоимость:</p>
+					<div class="price-slider">
+						<div class="price-slider-script"></div>
+						от <input class="min-price" type="text" value="0">
+						до <input class="max-price" type="text" value="15 000">
+					</div>
+				</div>
+		<!-- Checkbox -->	
+				<div class="filter-grid">
+					<p class="filter-title">Сетка:</p>
+					<label><input type="radio" name="radio-grid" checked>Адаптивная</label>
+					<label><input type="radio" name="radio-grid">Фиксированная</label>
+					<label><input type="radio" name="radio-grid">Резиновая</label>
+				</div>
+
+		<!-- Checkbox -->
+				<div class="filter-specials">
+					<p class="filter-title">Особенности</p>
+
+					<label><input type="checkbox" name="checkbox-1" checked>Слайдер</label>
+					<label><input type="checkbox" name="checkbox-1">Блок преимуществ</label>
+					<label><input type="checkbox" name="checkbox-1" checked>Новости</label>
+					<label><input type="checkbox" name="checkbox-1">Галерея</label>
+					<label><input type="checkbox" name="checkbox-1">Корзина</label>
+
+					<input class="filter-btn" type="submit" value="Показать">
+				</div>
+			</form>
+
+	<!-- Sorting-menu -->
+		<div class="sorting">
+			<p>Сортировать:</p>
+			<ul>
+				<li>
+					<p class="active">По цене</p>
+				</li>
+				<li>
+					<a href="#">По типу</a>
+				</li>
+				<li>
+					<a href="#">По названию</a>
+				</li>
+			</ul>
+			<div class="sorting-control">
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+
+	<!-- Item cards -->
+		<div class="items">
+			<div class="item-card">
+				<img src="#" alt="Sedona">
+				<p class="item-title">Sedona</p>
+				<p>Информационный сайт для туристов</p>
+				<a href="#" class="item-price-btn">9 900 р.</a>
+			</div>
+			<div class="item-card">
+				<img src="#" alt="Sedona">
+				<p class="item-title">Pink App</p>
+				<p>Продуктовый лендинг приложения для iOS и Android</p>
+				<a href="#" class="item-price-btn">9 900 р.</a>
+			</div>
+			<div class="item-card">
+				<img src="#" alt="Sedona">
+				<p class="item-title">Barbershop</p>
+				<p>Сайт салоны красоты. Для мужчин, да.</p>
+				<a href="#" class="item-price-btn">9 900 р.</a>
+			</div>
+			<div class="item-card">
+				<img src="#" alt="Sedona">
+				<p class="item-title">MISHKA</p>
+				<p>Интернет-магазин вязаных игрушек</p>
+				<a href="#" class="item-price-btn">9 900 р.</a>
+			</div>
+			<div class="item-card">
+				<img src="#" alt="Sedona">
+				<p class="item-title">A Plus</p>
+				<p>Лендинг курсов повышения квалификации</p>
+				<a href="#" class="item-price-btn">9 900 р.</a>
+			</div>
+			<div class="item-card">
+				<img src="#" alt="Sedona">
+				<p class="item-title">КВАСТ</p>
+				<p>Промо-сайт производителя крафтового кваса</p>
+				<a href="#" class="item-price-btn">9 900 р.</a>
+			</div>
+		</div>
+
+	<!-- Pagination -->	
+		<div class="pagination">
+			<p class="active">1</p>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#" class="next">Следующая</a>
+		</div>
+	</main>
+
+	<!-- Map & contacts -->
+		<div class="map">
+			<div class="contacts">
+				<h4>Nёrds design studio</h4>
+				<p>191186, Сагкт-Петербург, ул.Б.Конюшенная.д.19/8</p>
+				<p>тел.+7(812)275-75-75</p>
+				<a href="#">Напишите нам</a>
+			</div>
+		</div>
+
+<!-- Footer -->
+	<footer>
+		<section class="footer-social">
+			<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          	<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          	<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+		</section>
+		<section class="footer-promo">
+			<b>Давайте дружить, это выгодно!</b>
+			<p>Скидка 10% для друзей из социальныз сетей</p>
+		</section>
+	</footer>
+
+<!-- Feedback form -->	
+	<form action="#" method="get" class="feedback-form">
+		<p class="name">
+			<label for="input-name">Ваше имя:</label><input type="text" id="input-name" name="feedback-name" placeholder="Представьтесь, пожалуйста">
+		</p>
+		<p class="e-mail">
+			<label for="input-e-mail">Ваш e-mail:</label><input type="email" id="input-e-mail" name="feedback-e-mail" placeholder="Для отправки ответа">
+		</p>
+		<p class="message-text">
+			<label for="input-message">Текст письма:</label><textarea id="input-message" name="feedback-message" placeholder="В свободной форме"></textarea>
+		</p>
+		<div class="form-btn">
+			<input type="submit" id="input-submit" name="feedback-submit" class="btn feedback-submit" value="Отправить">
+		</div>
+	</form>
+
+<!-- Javascript -->
+	<script src="js/script.js"></script>
+</body>
+</html>
