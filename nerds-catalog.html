@@ -3,16 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Каталог</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 <!-- Header -->
 	<header class="main-header">
+	<div class="container clearfix">
 		<div class="index-logo">
-			<img src="img/nerds-logo.png" width="160" height="65" alt="Главная">
+			<img src="img/nerds-logo.png" width="160" height="65" alt="«Nёrds»">
 		</div>
-		<div class="container">
 			<nav class="main-navigation">
 				<ul>
 					<li>
@@ -40,12 +41,16 @@
 
 	<!-- Title -->
 		<div class="catalog-title">
-			<div class="container">
+			<div class="clearfix">
 				<h1 class="main-title">Магазин готовых шаблонов</h1>
 			</div>
 		</div>
 
+
+	<div class="container clearfix">
+		<div class="clearfix">
 	<!-- Filter: Slider & Radio & Checkbox -->
+		<div class="catalog-content-left">
 			<form action="#" method="get">
 		<!-- Slider -->	
 				<div class="filter-slider">
@@ -56,49 +61,55 @@
 						до <input class="max-price" type="text" value="15 000">
 					</div>
 				</div>
+
 		<!-- Checkbox -->	
 				<div class="filter-grid">
 					<p class="filter-title">Сетка:</p>
-					<label><input type="radio" name="radio-grid" checked>Адаптивная</label>
-					<label><input type="radio" name="radio-grid">Фиксированная</label>
-					<label><input type="radio" name="radio-grid">Резиновая</label>
+					<p><label><input type="radio" name="radio-grid" checked>Адаптивная</label></p>
+					<p><label><input type="radio" name="radio-grid">Фиксированная</label></p>
+					<p><label><input type="radio" name="radio-grid">Резиновая</label></p>
 				</div>
 
 		<!-- Checkbox -->
 				<div class="filter-specials">
 					<p class="filter-title">Особенности</p>
 
-					<label><input type="checkbox" name="checkbox-1" checked>Слайдер</label>
-					<label><input type="checkbox" name="checkbox-1">Блок преимуществ</label>
-					<label><input type="checkbox" name="checkbox-1" checked>Новости</label>
-					<label><input type="checkbox" name="checkbox-1">Галерея</label>
-					<label><input type="checkbox" name="checkbox-1">Корзина</label>
+					<p><label><input type="checkbox" name="checkbox-1" checked>Слайдер</label></p>
+					<p><label><input type="checkbox" name="checkbox-1">Блок преимуществ</label></p>
+					<p><label><input type="checkbox" name="checkbox-1" checked>Новости</label></p>
+					<p><label><input type="checkbox" name="checkbox-1">Галерея</label></p>
+					<p><label><input type="checkbox" name="checkbox-1">Корзина</label></p>
 
 					<input class="filter-btn" type="submit" value="Показать">
 				</div>
 			</form>
+		</div>
+
 
 	<!-- Sorting-menu -->
+	<div class="catalog-content-right">
 		<div class="sorting">
-			<p>Сортировать:</p>
+			<p class="sorting-items">Сортировать:</p>
 			<ul>
-				<li>
-					<p class="active">По цене</p>
+				<li class="sorting-items">
+					<a href="#" class="active">По цене</a>
 				</li>
-				<li>
+				<li class="sorting-items">
 					<a href="#">По типу</a>
 				</li>
-				<li>
+				<li class="sorting-items">
 					<a href="#">По названию</a>
 				</li>
 			</ul>
 			<div class="sorting-control">
-				<a href="#"></a>
-				<a href="#"></a>
+				<a href="#" class="icon-down"></a>
+				<a href="#" class="icon-up"></a>
 			</div>
 		</div>
 
+
 	<!-- Item cards -->
+
 		<div class="items">
 			<div class="item-card">
 				<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
@@ -137,18 +148,27 @@
 				<a href="#" class="item-price-btn">9 900 р.</a>
 			</div>
 		</div>
+		</div>
+		</div>
 
 	<!-- Pagination -->	
+
 		<div class="pagination">
 			<p class="active">1</p>
 			<a href="#">2</a>
 			<a href="#">3</a>
 			<a href="#" class="next">Следующая</a>
 		</div>
+	</div>
+		
+
 	</main>
 
+
 	<!-- Map & contacts -->
+
 		<div class="map">
+		<div class="container clearfix">
 			<div class="contacts">
 				<h4>Nёrds design studio</h4>
 				<p>191186, Сагкт-Петербург, ул.Б.Конюшенная.д.19/8</p>
@@ -156,30 +176,45 @@
 				<a href="#">Напишите нам</a>
 			</div>
 		</div>
+		</div>
+
 
 <!-- Footer -->
-	<footer>
+
+	<footer  class="main-footer">
+		<div class="container clearfix">
+
+	<!-- Socials Left -->
 		<section class="footer-social">
 			<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           	<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           	<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 		</section>
+
+	<!-- Promo Center -->
 		<section class="footer-promo">
 			<b>Давайте дружить, это выгодно!</b>
 			<p>Скидка 10% для друзей из социальныз сетей</p>
 		</section>
+		</div>
 	</footer>
 
+
 <!-- Feedback form -->	
+	
 	<form action="#" method="get" class="feedback-form">
+		<p class="form-name">Напишите нам</p>
 		<p class="name">
-			<label for="input-name">Ваше имя:</label><input type="text" id="input-name" name="feedback-name" placeholder="Представьтесь, пожалуйста">
+			<label for="input-name">Ваше имя:</label><br>
+			<input type="text" id="input-name" name="feedback-name" placeholder="Представьтесь, пожалуйста">
 		</p>
 		<p class="e-mail">
-			<label for="input-e-mail">Ваш e-mail:</label><input type="email" id="input-e-mail" name="feedback-e-mail" placeholder="Для отправки ответа">
+			<label for="input-e-mail">Ваш e-mail:</label><br>
+			<input type="email" id="input-e-mail" name="feedback-e-mail" placeholder="Для отправки ответа">
 		</p>
 		<p class="message-text">
-			<label for="input-message">Текст письма:</label><textarea id="input-message" name="feedback-message" placeholder="В свободной форме"></textarea>
+			<label for="input-message">Текст письма:</label><br>
+			<textarea id="input-message" name="feedback-message" placeholder="В свободной форме"></textarea>
 		</p>
 		<div class="form-btn">
 			<input type="submit" id="input-submit" name="feedback-submit" class="btn feedback-submit" value="Отправить">
