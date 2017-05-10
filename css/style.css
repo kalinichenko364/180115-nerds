@@ -174,21 +174,15 @@ padding-top: 50px;
 }
 
 .slide-title{
-    font-size:55px;
-    line-height:55px;
-    font-weight:500;
-    color:black;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
 }
 
 .slides p {
     width:420px;
     padding:15px 0;
     color:#283136;
-}
-
-.slide-btn {
-	width:240px;
-	margin-top:25px;
 }
 
 
@@ -231,6 +225,11 @@ padding-top: 50px;
 
 	background: #fb565a;
 	border-radius: 3px;
+}
+
+.slide-btn {
+	width:240px;
+	margin-top:25px;
 }
 
 .slide-btn:hover {
@@ -847,22 +846,22 @@ background-color:  #eeeeee;
 	text-decoration: none;
 	color: #000000;
 	margin-right: 25px;
+	opacity: 0.3;
 }
 
 .sorting li {
 	display: inline-block;
-	opacity: 0.3;
 }
 
-.sorting li:hover {
+.sorting a:hover {
 	opacity: 0.6;
 }
 
-.sorting li:active {
+.sorting a:active {
 	opacity: 1;
 }
 
-.sorting li .active {
+.sorting a.active {
 	opacity: 1;                   /* не работает */
 }
 
@@ -953,6 +952,7 @@ background-color:  #eeeeee;
 .detals {
 	display: none;
 	position: absolute;
+	left: 0;
 	bottom: 0;
 
 	width: 360px;
@@ -966,16 +966,16 @@ background-color:  #eeeeee;
 	cursor: pointer;
 }
 
-.item-card:hover .item-header{
+.item-card:hover .item-header {
 	background-color: #747a7a;
 }
 
-.item-card:hover .detals{
+.item-card:hover .detals {
 	display: inline-block;
 	text-align: center;
 }
 
-.item-title{
+.item-title {
 	display: block;
 	font-size: 18px;
 	line-height: 30px;
