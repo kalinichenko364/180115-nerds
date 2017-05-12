@@ -408,9 +408,7 @@ body {
 /* Promo */
 
 .partners {
-	display: table;
-    /*display: inline-block;
-    text-align: center;*/
+    display: table;
     width: 1160px;
     min-height: 90px;
     padding: 43px 0;
@@ -421,32 +419,29 @@ body {
 }
 
 .partner {
-	position: relative;
-	top: 2px;
-	left: -20px;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	padding: 5px 0;
-    /*float: left;
-    width: 25%;
-    line-height: 90px;*/
+    position: relative;
+    top: 2px;
+    left: -20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px 0;
     opacity: 0.2;
 }
 
 .partner:nth-child(2) {
-	top: -3px;
-	left: -29px;
+    top: -3px;
+    left: -29px;
 }
 
 .partner:nth-child(3) {
-	top: -3px;
-	left: -27px;
+    top: -3px;
+    left: -27px;
 }
 
 .partner:last-child {
-	top: 0;
-	left: 2px;
+    top: 0;
+    left: 2px;
 }
 
 .partner:hover {
